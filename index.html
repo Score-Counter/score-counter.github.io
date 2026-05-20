@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neo Score Tracker</title>
+    <title>Score Counter</title>
     
     <!-- Link ke Manifest -->
     <link rel="manifest" href="./manifest.json">
@@ -210,9 +210,9 @@
     // --- GAME LOGIC ---
     let players = [];
     const minPlayers = 2; 
-    const maxPlayers = 10;
+    const maxPlayers = 20;
     let nextPlayerId = 1;
-    const STORAGE_KEY = 'NEO_SCORE_TRACKER_DATA';
+    const STORAGE_KEY = 'Score-Counter';
 
     function init() {
         const savedData = localStorage.getItem(STORAGE_KEY);
